@@ -1,16 +1,17 @@
 # ember_mobile_test
 
-A new Flutter project.
+Graeme Somerville - Ember - Test app.
 
-## Getting Started
+## About the app
 
-This project is a starting point for a Flutter application.
+- This app uses the Ember API to display a list of upcoming bus routes on the current day.
+- You can tap on a route to view it on the map
+- the map view displays all the stops on the route, stops that have passed are highlighted red
+- tapping on a stop will reveal the name, estimated and actual departure times (if applicable)
+- the location of the bus is also shown on the map and is updated every 10 seconds
+- tapping on the bus reveals the route number and the last updated time of the buses location
 
-A few resources to get you started if this is your first Flutter project:
+### Notes from the developer
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- I've included a small selection of tests, given more time I would add further tests for the state management classes.
+- I would have liked to included the users location on the map as well, I've left this out to save some time
