@@ -77,32 +77,32 @@ class _AvailableRoutesPageState extends State<AvailableRoutesPage> {
 
   Column tripTitle(Quote quote) {
     return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(quote.legs!.first.destination!.detailedName.toString()),
-            const Text(
-              'to',
-            ),
-            Text(quote.legs!.first.origin!.detailedName.toString()),
-          ],
-        );
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(quote.legs!.first.destination!.detailedName.toString()),
+        const Text(
+          'to',
+        ),
+        Text(quote.legs!.first.origin!.detailedName.toString()),
+      ],
+    );
   }
 
   Row _listTileTrailing(DateTime departure) {
     return Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              'Dep: ${dateTimeToTimeString(departure)}',
-              style: TextStyle(
-                  color: DateTime.now().isAfter(departure)
-                      ? Colors.green.shade700
-                      : Colors.grey.shade700,
-                  fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(width: 10),
-            const Icon(Icons.arrow_forward_ios),
-          ],
-        );
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          'Dep: ${dateTimeToTimeString(departure)}',
+          style: TextStyle(
+              color: DateTime.now().isAfter(departure)
+                  ? Colors.green.shade700
+                  : Colors.grey.shade700,
+              fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(width: 10),
+        const Icon(Icons.arrow_forward_ios),
+      ],
+    );
   }
 }
